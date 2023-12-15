@@ -3,10 +3,18 @@ let productos = [];
 fetch("./js/productos.json")
     .then(response => response.json())
     .then(data => {
-        productos = data;
+        productos = data.map(producto => {
+            return {
+                id: producto.id,
+                titulo: producto.titulo,
+                precio: producto.precio,
+                imagen: producto.imagen,
+                categoria: producto.categoria,
+                //cantidad: 0  // Puedes agregar más propiedades si es necesario
+            };
+        });
         cargarProductos(productos);
-    })
-
+    });
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -14,18 +22,13 @@ const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
-
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
-}))
-
+}));
 
 function cargarProductos(productosElegidos) {
-
     contenedorProductos.innerHTML = "";
-
     productosElegidos.forEach(producto => {
-
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
@@ -36,17 +39,13 @@ function cargarProductos(productosElegidos) {
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
         `;
-
         contenedorProductos.append(div);
-    })
-
+    });
     actualizarBotonesAgregar();
 }
 
-
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
-
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
 
@@ -59,13 +58,11 @@ botonesCategorias.forEach(boton => {
             tituloPrincipal.innerText = "Todos los productos";
             cargarProductos(productos);
         }
-
-    })
+    });
 });
 
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
-
     botonesAgregar.forEach(boton => {
         boton.addEventListener("click", agregarAlCarrito);
     });
@@ -83,7 +80,6 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
-
     Toastify({
         text: "Producto agregado",
         duration: 3000,
