@@ -1,7 +1,7 @@
 [
     {
         "id": "abrigo-01",
-        "titulo": "Abrigo 01",
+        "titulo": "Campera Puma Active",
         "imagen": "./img/abrigos/01.jpg",
         "categoria": {
         "nombre": "Abrigos",
@@ -11,7 +11,7 @@
     },
     {
         "id": "abrigo-02",
-        "titulo": "Abrigo 02",
+        "titulo": "Buzo Puma Downtown",
         "imagen": "./img/abrigos/02.jpg",
         "categoria": {
         "nombre": "Abrigos",
@@ -21,7 +21,7 @@
     },
     {
         "id": "abrigo-03",
-        "titulo": "Abrigo 03",
+        "titulo": "Buzo Puma Essentials",
         "imagen": "./img/abrigos/03.jpg",
         "categoria": {
         "nombre": "Abrigos",
@@ -31,7 +31,7 @@
     },
     {
         "id": "abrigo-04",
-        "titulo": "Abrigo 04",
+        "titulo": "Buzo Puma Ess Small",
         "imagen": "./img/abrigos/04.jpg",
         "categoria": {
         "nombre": "Abrigos",
@@ -41,7 +41,7 @@
     },
     {
         "id": "abrigo-05",
-        "titulo": "Abrigo 05",
+        "titulo": "Buzo Puma Power",
         "imagen": "./img/abrigos/05.jpg",
         "categoria": {
         "nombre": "Abrigos",
@@ -51,7 +51,7 @@
     },
     {
         "id": "camiseta-01",
-        "titulo": "Camiseta 01",
+        "titulo": "Remera Puma Perfomance",
         "imagen": "./img/camisetas/01.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -61,7 +61,7 @@
     },
     {
         "id": "camiseta-02",
-        "titulo": "Camiseta 02",
+        "titulo": "Remera Puma Power",
         "imagen": "./img/camisetas/02.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -71,7 +71,7 @@
     },
     {
         "id": "camiseta-03",
-        "titulo": "Camiseta 03",
+        "titulo": "Remera Puma Essentials",
         "imagen": "./img/camisetas/03.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -81,7 +81,7 @@
     },
     {
         "id": "camiseta-04",
-        "titulo": "Camiseta 04",
+        "titulo": "Remera Urbana Puma",
         "imagen": "./img/camisetas/04.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -91,7 +91,7 @@
     },
     {
         "id": "camiseta-05",
-        "titulo": "Camiseta 05",
+        "titulo": "Remera Puma Ess Small",
         "imagen": "./img/camisetas/05.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -101,7 +101,7 @@
     },
     {
         "id": "camiseta-06",
-        "titulo": "Camiseta 06",
+        "titulo": "Remera Puma Train",
         "imagen": "./img/camisetas/06.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -111,7 +111,7 @@
     },
     {
         "id": "camiseta-07",
-        "titulo": "Camiseta 07",
+        "titulo": "Remera Puma Sportstyle",
         "imagen": "./img/camisetas/07.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -121,7 +121,7 @@
     },
     {
         "id": "camiseta-08",
-        "titulo": "Camiseta 08",
+        "titulo": "Remera Puma Downtown",
         "imagen": "./img/camisetas/08.jpg",
         "categoria": {
         "nombre": "Camisetas",
@@ -131,7 +131,7 @@
     },
     {
         "id": "pantalon-01",
-        "titulo": "Pantalón 01",
+        "titulo": "Pantalón Puma Essentials",
         "imagen": "./img/pantalones/01.jpg",
         "categoria": {
         "nombre": "Pantalones",
@@ -141,7 +141,7 @@
     },
     {
         "id": "pantalon-02",
-        "titulo": "Pantalón 02",
+        "titulo": "Pantalón Puma Sportstyle",
         "imagen": "./img/pantalones/02.jpg",
         "categoria": {
         "nombre": "Pantalones",
@@ -151,7 +151,7 @@
     },
     {
         "id": "pantalon-03",
-        "titulo": "Pantalón 03",
+        "titulo": "Pantalón Puma Sds Hombre",
         "imagen": "./img/pantalones/03.jpg",
         "categoria": {
         "nombre": "Pantalones",
@@ -161,7 +161,7 @@
     },
     {
         "id": "pantalon-04",
-        "titulo": "Pantalón 04",
+        "titulo": "Pantalón Puma Fit Woven",
         "imagen": "./img/pantalones/04.jpg",
         "categoria": {
         "nombre": "Pantalones",
@@ -171,7 +171,7 @@
     },
     {
         "id": "pantalon-05",
-        "titulo": "Pantalón 05",
+        "titulo": "Pantalón Puma Fit Hombre",
         "imagen": "./img/pantalones/05.jpg",
         "categoria": {
         "nombre": "Pantalones",
