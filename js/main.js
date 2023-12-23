@@ -1,20 +1,27 @@
 let productos = [];
 
-fetch("./js/productos.json")
-    .then(response => response.json())
-    .then(data => {
-        productos = data.map(producto => {
-            return {
-                id: producto.id,
-                titulo: producto.titulo,
-                precio: producto.precio,
-                imagen: producto.imagen,
-                categoria: producto.categoria,
-                //cantidad: 0  // Puedes agregar más propiedades si es necesario
-            };
-        });
+async function obtenerProductos() {
+    try {
+        const response = await fetch("./js/productos.json");
+        const data = await response.json();
+
+        productos = data.map(producto => ({
+            id: producto.id,
+            titulo: producto.titulo,
+            precio: producto.precio,
+            imagen: producto.imagen,
+            categoria: producto.categoria,
+        }));
+
         cargarProductos(productos);
-    });
+    } catch (error) {
+        console.error("Error al obtener los productos:", error);
+    }
+}
+
+// Llama a la función de obtenerProductos para iniciar el proceso
+obtenerProductos();
+
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
